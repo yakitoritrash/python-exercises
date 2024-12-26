@@ -12,15 +12,21 @@ def encode(original_text, shift_amount):
         new_index= alphabets.index(letter) + shift_amount
         encrypted_text += alphabets[new_index]
     print(encrypted_text)
+  
+def decrypt(encrypted_text, shift_amount):
+    decrypted_text = ""
+    for letter in encrypted_text:
+        new_index = alphabets.index(letter) - shift_amount
+        decrypted_text += alphabets[new_index]
+        
+    print(decrypted_text)
+        
+      
     
-    
-   
-    
-
 if direction == "encode":
     encode(text, shift)
     
-# elif direction == "decrypt":
-#     #text - shift
-# else:
-#     print("Please type either encode or decrypt")
+elif direction == "decrypt":
+    decrypt(text, shift)
+else:
+    print("Please type either encode or decrypt")
