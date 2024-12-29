@@ -7,7 +7,7 @@ def find_highest_bidder(bidding_dictionary):
             highest_bid = bid_amount    
             winner = bidder
     
-    print("The winner is {winner} with a bid of {highest_bid}")
+    print(f"The winner is {winner} with a bid of {highest_bid}")
 
 bids = {}
 
@@ -23,7 +23,7 @@ while continue_bidding:
         continue_bidding = False
         find_highest_bidder(bids)
     elif should_continue == "yes":
-        print("\n" * 20)
+        print("\n" * 100)
         
 
 
