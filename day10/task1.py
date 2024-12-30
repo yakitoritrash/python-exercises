@@ -1,3 +1,3 @@
 def format_name(fname, lname):
-    print(fname.title())
-    print(lname.title())
+    formated_fname = fname.title()
+    formated_lname  = lname.title()
