@@ -1,4 +1,7 @@
 def format_name(fname, lname):
+    '''Hey i am writing a docnote here
+    wadizup with yall?'''
+
     formated_fname = fname.title()
     formated_lname  = lname.title()
 
