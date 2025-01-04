@@ -19,12 +19,12 @@ def div(n1, n2):
     return n1/n2
 
 if operator == '+':
-    print(add(num1, num2))
+    print(f"{num1} + {num2} = {add(num1, num2)}")
 elif operator == '-':
-    print(sub(num1, num2))
+    print(f"{num1} - {num2} = {sub(num1, num2)}")
 elif operator == '*':
-    print(mul(num1, num2))
+    print(f"{num1} * {num2} = {mul(num1, num2)}")
 else:
-    print(div(num1, num2))
+    print(f"{num1} / {num2} = {div(num1, num2)}")
 
 
