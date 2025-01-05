@@ -28,3 +28,10 @@ else:
     print(f"{num1} / {num2} = {div(num1, num2)}")
 
 
+
+cont = input("If you want to continue with this number type 'y' or if you want to start calculations with a new number type 'n'. ")
+
+
+if const == 'y':
+    num1 = 
+
