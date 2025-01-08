@@ -24,7 +24,8 @@ if start == 'y':
     user2 = int(user_card[1])
     print(f"Your cards are: {user_card} and your score is {user1 + user2}. ")
     print(f"Computer's card: [{computer_card[0]}]")
-
+else:
+    exit
 
 
 
