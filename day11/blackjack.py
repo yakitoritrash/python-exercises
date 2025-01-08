@@ -14,22 +14,34 @@ for _ in range(2):
     user_card.append(deal_cards())
     computer_card.append(deal_cards())
 
-
-
-start = input("Hey! do you want to play blackjack, type 'y' or 'n'? ")
-
-
-if start == 'y':
-    user1 = int(user_card[0])
-    user2 = int(user_card[1])
-    print(f"Your cards are: {user_card} and your score is {user1 + user2}. ")
-    print(f"Computer's card: [{computer_card[0]}]")
-else:
-    exit
+def calculate_score(cards):
+    if sum(cards) == 21 and len(cards) == 2:
+        return 0
+    if 11 in cards and sum(cards) > 21:
+        cards.remove(11)
+        cards.append(1)
+    return sum(cards)
 
 
 
 
 
-#if __name__ == "__main__":
-#    main()
+
+
+
+
+#start = input("Hey! do you want to play blackjack, type 'y' or 'n'? ")
+
+
+#if start == 'y':
+    #    user1 = int(user_card[0])
+#    user2 = int(user_card[1])
+#    print(f"Your cards are: {user_card} and your score is {user1 + user2}. ")
+#    print(f"Computer's card: [{computer_card[0]}]")
+#    next_choice = input("If you want to deal another card type 'y' or 'n' to show cards. ")
+#else:
+    #    exit
+
+
+
+
