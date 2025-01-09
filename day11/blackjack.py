@@ -23,22 +23,17 @@ def calculate_score(cards):
     return sum(cards)
 
 
+start = input("Hey! do you want to play blackjack, type 'y' or 'n'? ")
 
+if start == 'y':
+    deal_cards()
+    user_score = calculate_score(user_card)
+    computer_score = calculate_score(computer_card)
+    print(user_score)
+    print(computer_score)
+    print(user_card)
+    print(computer_card)
 
-
-
-
-
-
-#start = input("Hey! do you want to play blackjack, type 'y' or 'n'? ")
-
-
-#if start == 'y':
-    #    user1 = int(user_card[0])
-#    user2 = int(user_card[1])
-#    print(f"Your cards are: {user_card} and your score is {user1 + user2}. ")
-#    print(f"Computer's card: [{computer_card[0]}]")
-#    next_choice = input("If you want to deal another card type 'y' or 'n' to show cards. ")
 #else:
     #    exit
 
