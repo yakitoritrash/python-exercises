@@ -15,6 +15,7 @@ def calculate_score(cards):
 
 user_card = []
 computer_card = []
+computer_score = -1
 is_game_over = False
 
 for _ in range(2):
@@ -39,6 +40,10 @@ if start == 'y':
                 user_card.append(deal_cards())
             else:
                 is_game_over = True
+
+while computer_score != 0 and computer score < 17:
+    computer_cards.append(deal_card())
+    computer_score = calculate_score(computer_cards)
 
 #if start == 'y':
 #    print(f"Your cards: {user_card}, current score: {user_score}. \nComputer's first card: {computer_card[0]}.")
