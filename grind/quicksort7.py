@@ -37,4 +37,3 @@ def qs(arr, lo, hi):
 arr = [6, 4, 3, 7, 6, 8, 9, 1]
 
 print(quicksort(arr))
-
