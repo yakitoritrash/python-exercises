@@ -1,5 +1,4 @@
 def binsearch(arr, n):
-
     hi = len(arr) - 1
     lo = 0
 
