@@ -9,8 +9,7 @@ def ispal(s):
     return True;
 
 def main():
-    s = "maadam"
-    x = int(ispal(s));
-    print(x)
+    s = "madam"
+    print(ispal(s))
 
 main()
