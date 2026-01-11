@@ -16,5 +16,5 @@ def binsearch(arr, n):
 arr = [2, 3, 4, 5, 6, 7]
 n = 3
 
-print(binsearch(ar, n))
+print(binsearch(arr, n))
 
